@@ -37,4 +37,4 @@ To enable usage of the Panda's DF, the data must be 2 dimensional and multi-inde
    wall normal locations (figure 2). 
    
    
-The figures of the output are in the repo and if you wish to run the script, you must type in "init = 0;" into the console before running.
+The figures of the output are in the repo and if you wish to run the script, you must type in "init = 0;" into the console and specify the file path to the turbulent flow data in the load file section. 
