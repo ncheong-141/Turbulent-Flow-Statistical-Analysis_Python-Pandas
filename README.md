@@ -15,12 +15,12 @@ The data structures used to process the data was the Panda's DataFrame (for the 
 To enable usage of the Panda's DF, the data must be 2 dimensional and multi-indexing (or hierarchical) was used in the format of: 
 
 
-    rows                        cols 
-     0          xi_1    zi_1    [ti,yi]
-     1                  zi_2    [ti,yi]
-     2                   ...
-     nz                 zi_nz   [ti,yi]
-     nz+1       xi_2    zi_1    [ti,yi]
+             |    L1       L2    L3 cols 
+     0       |   xi_1    zi_1    [ti,yi]
+     1       |           zi_2    [ti,yi]
+     2       |            ...
+     nz      |           zi_nz   [ti,yi]
+     nz+1    |   xi_2    zi_1    [ti,yi]
     
  
  The data was accessed/proccessed using Panda's and Scipy functions for: 
