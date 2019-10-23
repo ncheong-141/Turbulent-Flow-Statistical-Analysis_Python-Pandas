@@ -8,8 +8,7 @@ The turbulent flow data files are:
 - yloc.mat (wall normal distances) 
 - time.mat (time steps) 
 
-The data of the velocity files are in format of [ti, xi, zi, yi] which correspond to index values of another data file
-(i.e. yi -> yloc.mat).
+The data of the velocity files are in format of [ti, xi, zi, yi] which correspond to velocity at different spatial and temporal locations. The index values of the velocity arrays correspond to index values of another data file (i.e. yi -> yloc.mat).
 
 The data structures used to process the data was the Panda's DataFrame (for the velocities) and Series (for the time and yloc). 
 To enable usage of the Panda's DF, the data must be 2 dimensional and multi-indexing (or hierarchical) was used in the format of: 
