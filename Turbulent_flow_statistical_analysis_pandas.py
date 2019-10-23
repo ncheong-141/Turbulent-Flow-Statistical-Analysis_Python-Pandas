@@ -46,16 +46,11 @@ if (init == 0) :
     # xi,yi and zi element values refer to the indices in other arrays (such as yloc); they are not the actual spatial location.
     # The streamwise and spanwise  locations do not matter since the flow is statistical homogeneous in the streamwise and spanwise direction.
 
-
-    """===========================================================================
-                        Extract raw data and establish indices 
-    ==========================================================================="""
     # Index values
     max_index_time  = U_mat_data['U'].shape[0];
     max_index_xi    = U_mat_data['U'].shape[1];
     max_index_zi    = U_mat_data['U'].shape[2]; 
     max_index_yi    = U_mat_data['U'].shape[3];
-    
     
     """============================================================================
                                 Proccess data for analysis 
@@ -63,7 +58,7 @@ if (init == 0) :
     
     Need to convert 4D data to Panda's 2D DataFrame data structure 
     Multi indexing to collapse 4D data down to 2D. 
-    rows                        cols 
+                                    cols 
      0          xi_1    zi_1    [ti,yi]
      1                  zi_2    [ti,yi]
      2                   ...
@@ -71,6 +66,7 @@ if (init == 0) :
      nz+1       xi_2    zi_1    [ti,yi]
                 ...         
     """
+    
     """ ==== Insert 2D arrays of raw data into dataframe in [ti,yi] slices ==== """
     
     """
@@ -81,10 +77,7 @@ if (init == 0) :
            
          - Method:  df.loc : Inserting rows into dataframe using yi slices and pd.loc
            Code:    loop over ti -> df_U.loc[(xi,zi,ti),:] = U_data[ti,xi,zi,:];
-           Time:    98.97 - 140 seconds
-        
-        Can access single elements with: (or df.iat)
-           Access data with : df_U.loc[(xi,zi,time), yi]    
+           Time:    98.97 - 140 seconds]    
     """
 
     # Initialize empty dataframe structures for appending 2D arrays. 
