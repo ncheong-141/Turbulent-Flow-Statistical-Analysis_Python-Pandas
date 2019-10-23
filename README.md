@@ -22,8 +22,8 @@ To enable usage of the Panda's DF, the data must be 2 dimensional and multi-inde
      nz                 zi_nz   [ti,yi]
      nz+1       xi_2    zi_1    [ti,yi]
     
-    
-    The data was accessed/proccessed using Panda's and Scipy functions for: 
+ 
+ The data was accessed/proccessed using Panda's and Scipy functions for: 
     - Instantenous velocity profiles at different time steps. (figure 1) 
     - Mean (in xi,zi,ti) turbulent and corresponding laminar velocity profiles (figure 1). 
     - Displaying the discretization of the spatial domain for the DNS simulation the wall-normal direction (figure 1). 
@@ -32,4 +32,4 @@ To enable usage of the Panda's DF, the data must be 2 dimensional and multi-inde
       wall normal locations (figure 2). 
    
    
-  The figures of the output are in the repo and if you wish to run the script, you must type in "init = 0;" into the console before running.
+The figures of the output are in the repo and if you wish to run the script, you must type in "init = 0;" into the console before running.
