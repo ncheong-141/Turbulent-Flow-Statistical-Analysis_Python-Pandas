@@ -25,16 +25,16 @@ To enable usage of the Panda's DF, the data must be 2 dimensional and multi-inde
  
  The data was accessed/proccessed using Panda's and Scipy functions for: 
  
-    - Instantenous velocity profiles at different time steps. (figure 1) 
+ - Instantenous velocity profiles at different time steps. (figure 1) 
     
-    - Mean (in xi,zi,ti) turbulent and corresponding laminar velocity profiles (figure 1). 
+ - Mean (in xi,zi,ti) turbulent and corresponding laminar velocity profiles (figure 1). 
     
-    - Displaying the discretization of the spatial domain for the DNS simulation the wall-normal direction (figure 1). 
+ - Displaying the discretization of the spatial domain for the DNS simulation the wall-normal direction (figure 1). 
     
-    - Velocity time signals at different wall normal locations (figure 2). 
+ - Velocity time signals at different wall normal locations (figure 2). 
     
-    - Corresponding Probability Density Functions with statistical values of mean, skewness and variance of the different 
-      wall normal locations (figure 2). 
+ - Corresponding Probability Density Functions with statistical values of mean, skewness and variance of the different 
+   wall normal locations (figure 2). 
    
    
 The figures of the output are in the repo and if you wish to run the script, you must type in "init = 0;" into the console before running.
